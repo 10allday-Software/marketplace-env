@@ -29,7 +29,7 @@ def main():
             print
             print (
                 '** Repository at {path} does not exist. Run:\n'
-                'git clone git@github.com:mozilla/{repo_name}.git {path}'
+                'git clone git@github.com:10allday-Software/{repo_name}.git {path}'
                 .format(path=full_name, repo_name=name)
             )
             print
