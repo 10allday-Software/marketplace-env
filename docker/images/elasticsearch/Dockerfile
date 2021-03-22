@@ -1,5 +1,5 @@
 
-FROM mozillamarketplace/centos-python27-mkt:latest
+FROM 10alldaymarketplace/centos-python27-mkt:latest
 
 RUN yum install -y java-1.7.0-openjdk tar which
 
@@ -12,7 +12,7 @@ WORKDIR /srv/elasticsearch/elasticsearch-1.6.2
 
 RUN ./bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.6.0
 
-RUN curl -o /srv/elasticsearch/marketplace.yml https://raw.githubusercontent.com/mozilla/zamboni/master/scripts/elasticsearch/elasticsearch.yml
+RUN curl -o /srv/elasticsearch/marketplace.yml https://raw.githubusercontent.com/10allday-Software/zamboni/master/scripts/elasticsearch/elasticsearch.yml
 
 RUN sed -i 's/localhost/0.0.0.0/' /srv/elasticsearch/marketplace.yml
 
