@@ -1,4 +1,4 @@
-FROM mozillamarketplace/centos-python27-mkt:latest
+FROM 10alldaymarketplace/centos-python27-mkt:latest
 
 RUN yum install -y redis
 
